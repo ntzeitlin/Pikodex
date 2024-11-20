@@ -46,7 +46,7 @@ const database = [
         category: 'Business',
         abilities: 'PowerPoint Mastery',
         weakness: 'Paper Cuts'
-    },   
+    },
     {
         id: 7,
         name: 'Tarmus',
@@ -72,3 +72,7 @@ const database = [
         weakness: 'Close Talkers'
     }
 ];
+
+export const getPikoData = () => {
+    return database.map(pikomon => ({ ...pikomon }))
+}
